@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Web - Escuela de Informática</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header class="encabezado">
+    <div class="barra-logos">
+      <img src="https://i.postimg.cc/Jhk3xrT9/images-removebg-preview.png" alt="Logo Universidad de Panamá" class="logo">
+      <img src="https://i.postimg.cc/SRqGjBGm/images-1-removebg-preview.png" alt="Logo FIEC" class="logo">
+    </div>
+
+    <div class="titulos">
+      <h1>Universidad de Panamá</h1>
+      <h2>Facultad de Informática, Electrónica y Comunicación</h2>
+      <h3>Lic. Desarrollo de Aplicaciones Tecnológicas</h3>
+      <p class="autor">Autora: Evelyn Ortega</p>
+    </div>
+  </header>
+
+  <!-- MENÚ PRINCIPAL -->
+  <nav class="menu-principal">
+    <a href="#bienvenida">Inicio</a>
+    <a href="#historia">Historia y evolución de la web</a>
+    <a href="#etiquetas">Etiquetas de HTML</a>
+    <a href="#formularios">Formularios</a>
+    <a href="#javascript">JavaScript</a>
+    <a href="#estructuras">Estructuras switch, while, do/while, for</a>
+    <a href="#funciones">Funciones</a>
+    <a href="#parametros">Funciones con parámetros por valor</a>
+    <a href="#date">Clase Date</a>
+    <a href="#array-string">Clase Array y String</a>
+  </nav>
+
+  <main class="contenedor">
+
+  <!-- BIENVENIDA -->
+    <section id="bienvenida" class="tarjeta-bienvenida">
+      <h2>¡Bienvenidos a este sitio web!</h2>
+      <p>
+        Aquí encontrarás diferentes temas sobre desarrollo web y programación en JavaScript,
+        organizados por clase para que puedas consultarlos y descargar el material de apoyo.
+      </p>
+      <p>
+        Toca cualquiera de los temas de abajo o usa el menú superior para ir directo a su sección.
+      </p>
+
+      <!-- TARJETAS RÁPIDAS DE ACCESO A CADA TEMA -->
+      <div class="grid-temas">
+        <a href="#historia" class="mini-tarjeta">1. Historia y evolución de la web</a>
+        <a href="#etiquetas" class="mini-tarjeta">2. Etiquetas de HTML</a>
+        <a href="#formularios" class="mini-tarjeta">3. Formularios</a>
+        <a href="#javascript" class="mini-tarjeta">4. JavaScript</a>
+        <a href="#estructuras" class="mini-tarjeta">5. Estructuras switch, while, do/while, for</a>
+        <a href="#funciones" class="mini-tarjeta">6. Funciones</a>
+        <a href="#parametros" class="mini-tarjeta">7. Funciones con parámetros por valor</a>
+        <a href="#date" class="mini-tarjeta">8. Clase Date</a>
+        <a href="#array-string" class="mini-tarjeta">9. Clase Array y String</a>
+      </div>
+    </section>
+
+   <!-- TEMA 1 -->
+    <section id="historia" class="tarjeta-tema">
+      <h2>1. Historia y evolución de la web</h2>
+      <p>
+        La World Wide Web nació en 1989 (propuesta por Tim Berners-Lee en el CERN) y pasó de documentos enlazados y sitios estáticos (Web 1.0) a plataformas interactivas con contenido generado por usuarios (Web 2.0) y aplicaciones web modernas (Web 3.0, SPA, PWA y APIs).
+      </p>
+      <p>
+        <strong>Puntos clave de la clase:</strong>
+      </p>
+      <ul>
+        <li><strong>Pilares iniciales (1990-1991):</strong> HTML (estructura), HTTP (transferencia) y URL (localización de recursos).</li>
+        <li><strong>Arquitectura cliente-servidor:</strong> el cliente (navegador) solicita recursos mediante resolución DNS y el servidor responde con archivos o datos.</li>
+        <li><strong>HTTP y HTTPS:</strong> HTTP es un protocolo petición-respuesta sin estado (<em>stateless</em>), mientras que HTTPS añade cifrado TLS/SSL para confidencialidad, integridad y autenticidad.</li>
+      </ul>
+      <a href="documentos/Clase 1 desarrollo de aplicaciones web.docx" class="boton-doc" download>Abrir / Descargar documento</a>
+    </section>
+
+    <!-- TEMA 2 (CON LOS 2 DOCUMENTOS) -->
+    <section id="etiquetas" class="tarjeta-tema">
+      <h2>2. Etiquetas de HTML</h2>
+      <p>
+        HTML está formado por elementos que el navegador interpreta para mostrar contenido en pantalla, y se puede escribir en un editor de texto simple y probar en el navegador con extensión <code>.html</code>.
+      </p>
+      <p>
+        <strong>Conceptos y etiquetas de la Parte 1 (Laboratorio):</strong>
+      </p>
+      <ul>
+        <li><strong>Estructura básica:</strong> <code>&lt;!DOCTYPE html&gt;</code>, <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> (con <code>&lt;title&gt;</code> y <code>&lt;meta charset="UTF-8"&gt;</code>) y <code>&lt;body&gt;</code>.</li>
+        <li><strong>Salto de línea (<code>&lt;br&gt;</code>):</strong> fuerza a continuar en la siguiente línea (no lleva etiqueta de cierre).</li>
+        <li><strong>Párrafos (<code>&lt;p&gt;...&lt;/p&gt;</code>):</strong> agrupan ideas separadas por un espacio; admiten <code>&lt;br&gt;</code> en su interior.</li>
+        <li><strong>Títulos (<code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>):</strong> definen jerarquía de encabezados, siendo <code>&lt;h1&gt;</code> el de mayor nivel.</li>
+      </ul>
+      <div class="grupo-botones">
+        <a href="documentos/Que es html laboratorio.docx" class="boton-doc" download>Documento Parte 1 (Laboratorio)</a>
+        <a href="documentos/segunda clases_etiquetas html.docx" class="boton-doc" download>Documento Parte 2 (Etiquetas HTML)</a>
+      </div>
+    </section>
+
+    <!-- TEMA 3 -->
+    <section id="formularios" class="tarjeta-tema">
+      <h2>3. Formularios</h2>
+      <p>
+        Un formulario con <code>&lt;form&gt;</code> permite que el visitante ingrese datos y los envíe al servidor (indicando destino en <code>action</code> y método como <code>method="post"</code>)[cite: 16]. Cada campo necesita su atributo <code>name</code> para identificarse[cite: 17].
+      </p>
+      <p>
+        <strong>Controles principales vistos en clase:</strong>
+      </p>
+      <ul>
+        <li><strong><code>&lt;input&gt;</code>:</strong> cuadros de texto (<code>type="text"</code>), contraseñas con asteriscos (<code>type="password"</code>), envío (<code>type="submit"</code>) y borrado de campos (<code>type="reset"</code>)[cite: 16, 17, 18].</li>
+        <li><strong><code>&lt;textarea&gt;</code>:</strong> área de texto multilínea para comentarios largos, con <code>rows</code> (filas) y <code>cols</code> (columnas)[cite: 19, 20].</li>
+        <li><strong>Checkbox y Radio:</strong> <code>type="checkbox"</code> permite marcar/desmarcar varias opciones independientes, mientras que <code>type="radio"</code> con el mismo <code>name</code> permite elegir solo una opción enviando su <code>value</code>[cite: 20, 21, 22].</li>
+        <li><strong><code>&lt;select&gt;</code>:</strong> lista desplegable con <code>&lt;option&gt;</code>; admite selección múltiple con <code>multiple</code> (y <code>name="...[]"</code>) y agrupaciones con <code>&lt;optgroup label="..."&gt;</code>[cite: 22, 23, 25, 26].</li>
+      </ul>
+      <a href="documentos/Formulariofinal.docx" class="boton-doc" download>Abrir / Descargar documento</a>
+    </section>
+
+ <!-- TEMA 4 -->
+    <section id="javascript" class="tarjeta-tema">
+      <h2>4. JavaScript</h2>
+      <p>
+        JavaScript es un lenguaje interpretado orientado a documento que se embebe dentro de HTML (entre etiquetas <code>&lt;script&gt;</code> y <code>&lt;/script&gt;</code>) para dar interactividad, y es sensible a mayúsculas y minúsculas[cite: 27, 28].
+      </p>
+      <p>
+        <strong>Conceptos clave del documento:</strong>
+      </p>
+      <ul>
+        <li><strong>Salida y entrada:</strong> <code>document.write()</code> imprime en la página y <code>prompt()</code> pide datos por teclado (siempre devuelve texto, por lo que se usa <code>parseInt()</code> o <code>parseFloat()</code> para operar como números)[cite: 27, 31, 33, 38].</li>
+        <li><strong>Variables y tipos:</strong> se declaran con <code>let</code> y pueden guardar enteros, decimales, cadenas de texto (entre comillas) o booleanos (<code>true</code> / <code>false</code>)[cite: 28, 30].</li>
+        <li><strong>Condicionales y <code>switch</code>:</strong> estructuras <code>if</code>, <code>if / else</code> y condicionales anidadas para tomar decisiones, además de <code>switch</code> con <code>case</code>, <code>break</code> y <code>default</code> para evaluar valores exactos[cite: 35, 39, 41, 43, 44].</li>
+        <li><strong>Ciclo <code>while</code>:</strong> repite un bloque mientras la condición sea verdadera, cuidando actualizar el contador y evitar ciclos infinitos[cite: 45, 47].</li>
+      </ul>
+      <a href="documentos/Qué es JavaScript-2026.docx" class="boton-doc" download>Abrir / Descargar documento</a>
+    </section>
+
+    <!-- TEMA 5 -->
+    <section id="estructuras" class="tarjeta-tema">
+      <h2>5. Estructuras switch, while, do/while, for</h2>
+      <p>
+        Las estructuras de selección múltiple y repetitivas permiten controlar el flujo de un programa en JavaScript sin repetir código innecesariamente, apoyándose en contadores y acumuladores.
+      </p>
+      <p>
+        <strong>Estructuras principales vistas en clase:</strong>
+      </p>
+      <ul>
+        <li><strong><code>switch</code>:</strong> evalúa igualdad exacta de una variable frente a distintos <code>case</code> (finalizando cada uno con <code>break</code> y usando <code>default</code> como opción por defecto).</li>
+        <li><strong><code>while</code>:</strong> evalúa la condición al inicio y repite el bloque mientras sea verdadera; si es falsa desde el principio, no se ejecuta.</li>
+        <li><strong><code>do / while</code>:</strong> ejecuta el bloque al menos una vez porque evalúa la condición al final del ciclo.</li>
+        <li><strong><code>for</code>:</strong> ideal cuando se conoce de antemano cuántas repeticiones se harán; recibe inicialización (preferiblemente con <code>let</code>), condición e incremento/decremento (<code>++</code> / <code>--</code>).</li>
+      </ul>
+      <a href="documentos/Estructuras.docx" class="boton-doc" download>Abrir / Descargar documento</a>
+    </section>
+
+    <!-- TEMA 6 -->
+    <section id="funciones" class="tarjeta-tema">
+      <h2>6. Funciones</h2>
+      <p>
+        Una función agrupa un conjunto de instrucciones que resuelven parte de un problema para evitar repetir código y hacer el programa más ordenado y fácil de leer[cite: 61, 64].
+      </p>
+      <p>
+        <strong>Puntos clave de la clase:</strong>
+      </p>
+      <ul>
+        <li><strong>Estructura y nombre:</strong> se declaran con <code>function nombreFuncion(argumentos) { ... }</code> usando un nombre descriptivo y respetando mayúsculas y minúsculas</li>
+        <li><strong>Llamada (invocación):</strong> las instrucciones de una función solo se ejecutan cuando se la llama por su nombre (por ejemplo, <code>mostrarMensaje()</code>), y puede llamarse las veces que haga falta</li>
+        <li><strong>Variables locales y entrada de datos:</strong> dentro de una función se pueden declarar variables locales (como <code>let valor</code>) y pedir datos por teclado con <code>prompt()</code>[cite: 65]</li>
+      </ul>
+      <a href="documentos/Funcionesparte1.docx" class="boton-doc" download>Abrir / Descargar documento</a>
+    </section>
+   <!-- TEMA 7 -->
+    <section id="parametros" class="tarjeta-tema">
+      <h2>7. Funciones con parámetros por valor</h2>
+      <p>
+        Las funciones pueden recibir datos de entrada mediante parámetros (cuyos nombres no tienen que llamarse igual que las variables enviadas al llamarlas) y devolver un resultado usando <code>return</code>[cite: 66, 67, 69].
+      </p>
+      <p>
+        <strong>Puntos clave de la clase:</strong>
+      </p>
+      <ul>
+        <li><strong>Paso de parámetros:</strong> al invocar la función, los valores o variables pasan en orden a los parámetros definidos entre paréntesis (por ejemplo, <code>mostrarComprendidos(valor1, valor2)</code>)</li>
+        <li><strong>Retorno con <code>return</code>:</strong> una función puede recibir varios parámetros, pero solo retorna un único valor, el cual puede guardarse en una variable o imprimirse directamente</li>
+        <li><strong>Combinación con <code>switch</code> y cadenas:</strong> se puede usar <code>return</code> dentro de estructuras condicionales o <code>switch</code> para devolver textos o construir mensajes acumulando cadenas</li>
+      </ul>[cite: 67, 69, 71]
+      <a href="documentos/Funciones con parámetros-valor.docx" class="boton-doc" download>Abrir / Descargar documento</a>
+    </section>
+   <!-- TEMA 8 -->
+    <section id="date" class="tarjeta-tema">
+      <h2>8. Clase Date</h2>
+      <p>
+        La clase predefinida <code>Date</code> permite manejar fechas y horas en JavaScript creando instancias con el operador <code>new</code>, ya sea tomando la fecha y hora actual del equipo o pasando valores específicos[cite: 73, 75].
+      </p>
+      <p>
+        <strong>Puntos clave de la clase:</strong>
+      </p>
+      <ul>
+        <li><strong>Creación de instancias:</strong> con <code>new Date()</code> se obtiene la fecha y hora actual, mientras que al pasar parámetros los meses empiezan en <code>0</code> (enero es <code>0</code> y diciembre es <code>11</code>)[cite: 73]</li>
+        <li><strong>Métodos <code>get</code> y <code>set</code>:</strong> permiten leer o cambiar año (<code>getFullYear()</code> / <code>setFullYear()</code>), mes (<code>getMonth()</code> / <code>setMonth()</code>), día del mes (<code>getDate()</code> / <code>setDate()</code>), horas, minutos y segundos[cite: 73]</li>
+        <li><strong>Día de la semana:</strong> <code>getDay()</code> devuelve un número del <code>0</code> (domingo) al <code>6</code> (sábado), útil para formatear fechas legibles junto con estructuras como <code>switch</code>[cite: 74, 78, 79]</li>
+      </ul>
+      <a href="documentos/Clase Date.docx" class="boton-doc" download>Abrir / Descargar documento</a>
+    </section>
+
+    <!-- TEMA 9 -->
+    <section id="array-string" class="tarjeta-tema">
+      <h2>9. Clase Array y String</h2>
+      <p>
+        Los arreglos (<code>Array</code>) permiten guardar conjuntos de datos bajo un mismo nombre accediendo por índice desde <code>0</code>, mientras que <code>String</code> representa cadenas de texto con propiedades y métodos para manipularlas[cite: 80, 83, 86].
+      </p>
+      <p>
+        <strong>Puntos clave de la clase:</strong>
+      </p>
+      <ul>
+        <li><strong>Clase <code>Array</code>:</strong> se puede crear con <code>new Array(n)</code> o corchetes <code>[]</code>; su longitud se consulta con <code>.length</code> y permite trabajar con vectores paralelos o arreglos anidados (matrices)[cite: 81, 83, 84, 85].</li>
+        <li><strong>Clase <code>String</code>:</strong> se concatenan textos con <code>+</code> y se obtiene el total de caracteres con <code>.length</code>[cite: 86].</li>
+        <li><strong>Métodos principales de <code>String</code>:</strong> <code>charAt(pos)</code> obtiene el carácter en esa posición, <code>substring(inicio, fin)</code> extrae un fragmento (sin incluir <code>fin</code>), <code>indexOf(subcadena)</code> busca su posición o devuelve <code>-1</code>, y <code>toUpperCase()</code> / <code>toLowerCase()</code> convierten a mayúsculas o minúsculas[cite: 86, 87, 88].</li>
+      </ul>
+      <a href="documentos/Clase-Array-y-String.docx" class="boton-doc" download>Abrir / Descargar documento</a>
+    </section>
+
+  </main>
+
+</body>
+</html>
